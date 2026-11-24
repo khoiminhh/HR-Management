@@ -1,0 +1,226 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+    --brand-name: "HR Management";
+    --official-primary: #1d4ed8;
+    --official-primary-dark: #173b9f;
+    --official-accent: #0f766e;
+    --official-ink: #172033;
+    --official-muted: #667085;
+    --official-line: #dbe4ef;
+    --official-bg: #f3f6fa;
+    --official-surface: #ffffff;
+    --official-shadow: 0 14px 36px rgba(23, 32, 51, .10);
+    --official-shadow-sm: 0 8px 22px rgba(23, 32, 51, .07);
+}
+
+body {
+    background:
+        radial-gradient(circle at 88% 0%, rgba(15, 118, 110, .08), transparent 28rem),
+        linear-gradient(180deg, #f8fbff 0%, var(--official-bg) 100%) !important;
+    color: var(--official-ink) !important;
+    letter-spacing: 0 !important;
+}
+
+.app-brand,
+.brand-lockup {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.brand-mark,
+.app-brand-mark,
+.logo-mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 42px;
+    background: linear-gradient(135deg, #dbeafe, #ccfbf1) !important;
+    color: var(--official-primary-dark) !important;
+    border: 1px solid rgba(255, 255, 255, .50);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .56), 0 10px 24px rgba(15, 23, 42, .16);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.brand-mark span {
+    display: none !important;
+}
+
+.brand-mark::before,
+.app-brand-mark::before,
+.logo-mark::before {
+    content: "\f1dd";
+    font-family: "bootstrap-icons";
+}
+
+.logo-mark {
+    color: var(--official-primary-dark) !important;
+    font-size: 0 !important;
+}
+
+.header-logo,
+.brand-name,
+.sidebar-brand .sb-title {
+    color: #fff !important;
+    font-weight: 900 !important;
+    letter-spacing: 0 !important;
+}
+
+.header-logo span {
+    display: none;
+}
+
+.header-subtitle,
+.brand-sub,
+.sidebar-brand .sb-sub {
+    color: rgba(255, 255, 255, .72) !important;
+    letter-spacing: .08em !important;
+}
+
+.header,
+.page-hd {
+    background:
+        linear-gradient(135deg, rgba(29, 78, 216, .96), rgba(15, 118, 110, .92)) !important;
+    border: 1px solid rgba(255, 255, 255, .18) !important;
+    box-shadow: var(--official-shadow) !important;
+}
+
+.page-hd h1,
+.page-hd p,
+.header h1,
+.header p {
+    letter-spacing: 0 !important;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #0b1222 0%, #111827 58%, #0f172a 100%) !important;
+    border: 1px solid rgba(148, 163, 184, .16) !important;
+}
+
+.nav-link .icon,
+.q-icon,
+.stat-icon,
+.btn-icon,
+.input-icon,
+.s-icon,
+.ui-icon {
+    font-family: "bootstrap-icons" !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    speak: never;
+}
+
+.nav-link .icon,
+.q-icon,
+.stat-icon {
+    font-size: 0 !important;
+}
+
+.icon-dashboard::before { content: "\f17e"; }
+.icon-employees::before { content: "\f4cf"; }
+.icon-contracts::before { content: "\f38b"; }
+.icon-departments::before { content: "\f1dd"; }
+.icon-shifts::before { content: "\f293"; }
+.icon-schedules::before { content: "\f1e2"; }
+.icon-part-time::before { content: "\f8d3"; }
+.icon-profile::before { content: "\f4da"; }
+.icon-salaries::before { content: "\f63a"; }
+.icon-salary-stats::before { content: "\f673"; }
+.icon-reports::before { content: "\f1e8"; }
+.icon-users::before { content: "\f4d7"; }
+.icon-add::before { content: "\f4fe"; }
+.icon-edit::before { content: "\f4ca"; }
+.icon-delete::before { content: "\f5de"; }
+.icon-save::before { content: "\f26b"; }
+.icon-back::before { content: "\f12f"; }
+.icon-calendar::before { content: "\f1e2"; }
+.icon-success::before { content: "\f26a"; }
+.icon-inactive::before { content: "\f623"; }
+.icon-alert::before { content: "\f33a"; }
+.icon-warning::before { content: "\f33b"; }
+.icon-money::before { content: "\f63a"; }
+.icon-search::before { content: "\f52a"; }
+.icon-user::before { content: "\f4da"; }
+.icon-lock::before { content: "\f47a"; }
+.icon-menu::before { content: "\f479"; }
+.icon-moon::before { content: "\f496"; }
+.icon-logout::before { content: "\f1c3"; }
+
+.nav-link .icon::before,
+.q-icon::before,
+.stat-icon::before,
+.btn-icon .ui-icon::before,
+.input-icon::before,
+.s-icon::before,
+.ui-icon::before {
+    font-size: 16px;
+}
+
+.q-icon::before {
+    font-size: 22px;
+}
+
+.stat-icon::before {
+    font-size: 22px;
+}
+
+.btn,
+button,
+input[type="submit"],
+input[type="button"] {
+    border-radius: 9px !important;
+    letter-spacing: 0 !important;
+}
+
+.btn-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px !important;
+    height: 38px !important;
+    padding: 0 !important;
+    border-radius: 11px !important;
+    text-decoration: none !important;
+}
+
+.btn-primary,
+.btn-login,
+button[type="submit"]:not(.btn-del):not(.btn-delete) {
+    background: linear-gradient(135deg, var(--official-primary), var(--official-accent)) !important;
+    color: #fff !important;
+    border: 0 !important;
+}
+
+.breadnav {
+    border: 1px solid var(--official-line) !important;
+    box-shadow: var(--official-shadow-sm) !important;
+}
+
+.breadnav .sep {
+    font-size: 0 !important;
+}
+
+.breadnav .sep::before {
+    content: "/";
+    color: #98a2b3;
+    font-size: 12px;
+}
+
+.alert-success::before,
+.alert-error::before {
+    font-family: "bootstrap-icons";
+    margin-right: 8px;
+}
+
+.alert-success::before { content: "\f26a"; }
+.alert-error::before { content: "\f623"; }
+
+.official-brand-name::before {
+    content: var(--brand-name);
+}
